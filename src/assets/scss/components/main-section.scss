@@ -1,0 +1,51 @@
+@import "../main/parameters";
+
+.main-section {
+    background-color: $c-light-bg;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 3.5rem;
+    }
+
+    &__content {
+        min-height: 72rem;
+        flex: 1 0 50%;
+        max-width: 50%;
+        padding-top: 20rem;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 5.5rem;
+        line-height: 1.38;
+        color: $c-text;
+        letter-spacing: 0.02em;
+
+        .primary {
+            color: $c-primary;
+            display: block;
+        }
+
+        .dot {
+            color: #F3AF47;
+        }
+    }
+
+    &__btn {}
+
+    &__img-wrap {
+        flex: 1 0 50%;
+        max-width: 50%;
+        min-height: 72rem;
+        position: relative;
+    }
+
+    &__img {
+        position: absolute;
+        bottom: 0;
+        right: -5.7vw;
+        width: 58.5vw;
+    }
+}
