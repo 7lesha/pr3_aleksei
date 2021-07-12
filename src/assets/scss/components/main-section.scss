@@ -22,6 +22,7 @@
         line-height: 1.38;
         color: $c-text;
         letter-spacing: 0.02em;
+        margin-bottom: 5rem;
 
         .primary {
             color: $c-primary;
@@ -33,7 +34,24 @@
         }
     }
 
-    &__btn {}
+    &__btn {
+        display: inline-block;
+        background: $c-primary;
+        border: 0.1rem solid $c-primary;
+        box-sizing: border-box;
+        box-shadow: 0 0.3rem 1.8rem rgba(0, 201, 201, 0.55);
+        border-radius: 1.4rem;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        color: $c-text;
+        padding: 1.9rem 2.1rem;
+    }
+
+    &__btn:hover {
+        color: $c-primary;
+        background-color: $c-text;
+    }
 
     &__img-wrap {
         flex: 1 0 50%;
@@ -43,9 +61,11 @@
     }
 
     &__img {
+        max-width: 793px;
         position: absolute;
         bottom: 0;
-        right: -5.7vw;
+        right: -0.7vw;
         width: 58.5vw;
+        //width: 100%;
     }
 }

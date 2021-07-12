@@ -1,0 +1,58 @@
+@import "../main/parameters";
+
+.tel-section {
+
+    &__row {
+        margin-top: 15.8rem;
+        background-color: $c-light-bg;
+    }
+
+    &__content {
+        display: flex;
+        position: relative;
+        
+    }
+
+    &__img {
+        position: absolute;
+        bottom: -6rem;
+        right: -5rem;
+        width: 100%;
+    }
+
+    &__img-wrap {
+        width: 50%;
+    }
+
+    &__text {
+        width: 50%;
+    }
+}
+
+.text {
+    padding: 11.5rem 2rem 15.7rem 4rem;
+    &__description {
+        font-size: 1.8rem;
+        line-height: 1;
+        color: $c-text2;
+        margin-bottom: 2.2rem;
+    }
+
+    &__title {
+        font-weight: 900;
+        font-size: 4rem;
+        line-height: 1.38;
+        color: $c-text;
+    }
+
+    &__second-line {
+        margin-bottom: 2.1rem;
+    }
+
+    &__descriptions {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: $c-text2;
+        max-width: 41.4rem;
+    }
+}

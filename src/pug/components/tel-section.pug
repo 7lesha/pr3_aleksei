@@ -1,0 +1,13 @@
+section.tel-section 
+    .container.tel-section__row 
+        .tel-section__content 
+            .tel-section__img-wrap
+                img.tel-section__img(src="./assets/imgs/img6.png", alt="картинка")
+            .tel-section__text
+                mixin items(description, title, titles, descriptions)
+                    .text 
+                        .text__description=description
+                        .text__title=title 
+                        .text__title.text__second-line=titles 
+                        .text__descriptions=descriptions
+                +items('Your daily pick-me-up','How does','it work.','Start choosing your favorite teas and snacks in your nearby stores and place your orders, accumulate points, share gifts and teas with your friends and co-workers, and finally use our T-Pass to get your free drinks.')
