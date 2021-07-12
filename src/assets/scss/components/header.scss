@@ -8,6 +8,7 @@
     right: 0;
 
     &__row {
+        flex-wrap: wrap;
         display: flex;
         justify-content: space-between;
         padding: 3rem 3.5rem;
@@ -17,7 +18,7 @@
 .logo {
 
     &__img {
-
+        margin-bottom: 2rem;
     }
 }
 
@@ -26,6 +27,7 @@
 
     &__item {
         margin-left: 1.8rem;
+        text-align: center;
     }
     &__link {
         font-style: bold;
@@ -39,5 +41,19 @@
     &__link--inverse {
         color: #fff;
         background-color: $c-text;
+    }
+}
+
+@media screen and (max-width: $xs) {
+
+    .header__row {
+        padding: 3rem 3.5rem;
+    }
+
+    .links__link {
+        padding: 1.5rem 1rem;
+    }
+    .links__item {
+        margin-left: 0rem;
     }
 }

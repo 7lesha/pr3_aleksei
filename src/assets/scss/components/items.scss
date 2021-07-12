@@ -11,7 +11,7 @@
     }
 
     &__column {
-
+        margin-bottom: 2rem;
     }
 }
 
@@ -37,3 +37,20 @@
     max-width: 29.6rem;
     }
 } 
+
+@media screen and (max-width: $sm) {
+    .item__title {
+        font-size: 2.3rem;
+    }
+
+    .item__description {
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .items__row {
+    justify-content: center;
+    text-align: center;
+    }
+}
