@@ -390,7 +390,8 @@ button {
 @media screen and (max-width: 578px) {
   .items__row {
     justify-content: center;
-    text-align: center; } }
+    text-align: center;
+    padding-top: 3rem; } }
 
 .tel-section__row {
   margin-top: 15.8rem;
@@ -466,6 +467,8 @@ button {
   .tel-section__img-drink {
     bottom: 17rem;
     left: -1rem; }
+  .tel-section__row {
+    margin-top: 6rem; }
   .text__title {
     font-size: 3.8rem; } }
 
@@ -482,6 +485,8 @@ button {
   .tel-section__img-drink {
     bottom: 19rem;
     left: 0rem; }
+  .tel-section__row {
+    margin-top: -0.2rem; }
   .text {
     padding-left: 1rem; }
     .text__title {
