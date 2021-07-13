@@ -1,0 +1,74 @@
+
+@import "../main/parameters";
+
+.loyalty-points-section {
+    background: $c-light-bg;
+    margin-bottom: 18rem;
+
+    &__row {
+
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__img {
+        width: 50%;
+    }
+
+    &__img img {
+        max-width: 41.1vw;
+        position: absolute;
+        margin: -10rem 0 0 -4.5rem;
+    }
+}
+
+.text-block {
+    width: 50%;
+    &__block {
+        display: flex;
+        background: #FFF;
+        box-shadow: 0rem 0.8rem 3.2rem rgba(15, 35, 54, 0.06);
+        border-radius: 0.8rem;
+        max-width: 45.5rem;
+        padding: 2.5rem 3.1rem 4.3rem 2.5rem;
+    }
+
+    &__img img{
+        background: #F6F7F8;
+        border-radius: 0.8rem;
+        padding: 1rem;
+    }
+
+    &__text {
+        padding: 1.3rem 0 0 2.3rem;
+    }
+
+    &__title {
+        font-weight: bold;
+        font-size: 2.5rem;
+        line-height: 1;
+        letter-spacing: 0.02rem;
+        color: $c-text;
+        margin-bottom: 2.5rem;
+    }
+    &__description {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: $c-text2;
+        max-width: 31.7rem;
+    }
+
+    &__first-block {
+        margin: -4rem 0 0 2rem;
+    }
+
+    &__second-block {
+        margin: 3rem 0 0 6rem;
+    }
+
+    &__third-block {
+        margin: 3rem 0 -3rem 2rem;
+    }
+}

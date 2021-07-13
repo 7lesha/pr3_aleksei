@@ -3,7 +3,7 @@
 .tel-section {
 
     &__row {
-        margin-top: 16rem;
+        margin-top: 14rem;
         background-color: $c-light-bg;
         margin-bottom: 22rem;
         border-radius: 5rem;
@@ -26,7 +26,7 @@
         max-width: 22.3vw;
         position: relative;
         z-index: 2;
-        margin: -4.5rem 0;
+        margin: -5rem 0;
     }
 
     &__img-screen {
@@ -39,7 +39,7 @@
 
     &__img-crisps {
         position: absolute;
-        bottom: -5rem;
+        bottom: -6rem;
         left: 23rem;
         z-index: 3;
         width: 15.5vw;
@@ -47,8 +47,8 @@
 
     &__img-drink {
         position: absolute;
-        bottom: 7rem;
-        left: -12rem;
+        bottom: 6.5rem;
+        left: -12.5rem;
         z-index: 0;
         max-width: 13vw;
     }
@@ -76,6 +76,7 @@
     }
 
     &__descriptions {
+        margin-top: 2.1rem;
         font-size: 1.6rem;
         line-height: 1.5;
         color: $c-text2;
