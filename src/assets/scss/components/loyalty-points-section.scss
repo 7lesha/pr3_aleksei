@@ -19,7 +19,6 @@
 
     &__img img {
         max-width: 41.1vw;
-        position: absolute;
         margin: -10rem 0 0 -4.5rem;
     }
 }
@@ -70,5 +69,69 @@
 
     &__third-block {
         margin: 3rem 0 -3rem 2rem;
+    }
+}
+
+@media screen and (max-width: $md) {
+    .loyalty-points-section__img img {
+        margin: 4rem 0 0 3.5rem;
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .loyalty-points-section {
+        margin-bottom: 14rem;
+    }
+
+    .text-block {
+        &__title {
+            font-size: 2.3rem;
+        }
+
+        &__block {
+            padding: 1.5rem 2.1rem 3.3rem 1.5rem;
+        }
+
+        &__first-block {
+            margin: -4rem 0 0 2rem;
+        }
+
+        &__second-block {
+            margin: 3rem 0 0 2rem;
+        }
+
+        &__third-block {
+            margin: 3rem 0 -3rem 2rem;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .loyalty-points-section {
+        margin-bottom: 10rem;
+    }
+
+    .text-block {
+        width: 100%;
+
+        &__description {
+            margin-left: -7.5rem;
+        }
+    }
+
+    .loyalty-points-section {
+    
+        &__img {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__img img {
+            margin: 4rem 0 0 0;
+        }
+
+        &__content {
+            display: block;
+        }
     }
 }

@@ -1,0 +1,55 @@
+@import "../main/parameters";
+
+.friends-section {
+
+    &__row {
+        background-color: $c-light-bg;
+        margin-bottom: 15rem;
+        border-radius: 5rem;
+    }
+
+    &__content {
+        padding: 1rem 0 0 14rem;
+        display: flex;
+    }
+
+    &__text {
+        width: 50%;
+    }
+
+    &__imgs {
+        width: 50%;
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1);
+    }
+
+    &__img-drink {
+        position: absolute;
+        bottom: 2rem;
+        left: 23rem;
+        z-index: 0;
+        width: 15.5vw;
+    }
+
+    &__img-berries {
+        position: absolute;
+        bottom: -5.5rem;
+        left: -10.5rem;
+        z-index: 0;
+        max-width: 13vw;
+    }
+}
+
+@media screen and (max-width: $md) {
+
+    .friends-section__content {
+        padding: 1rem 0 0 7rem;
+    }
+}
+
+@media screen and (max-width: $sm) {
+
+    .friends-section__content {
+        padding: 1rem 0 0 3rem;
+    }
+}

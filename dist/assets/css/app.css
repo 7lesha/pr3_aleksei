@@ -322,7 +322,9 @@ button {
     font-size: 1.8rem;
     line-height: 1.2;
     color: #0F2336;
-    padding: 1.9rem 2.1rem; }
+    padding: 1.9rem 3rem 1.9rem 2.1rem; }
+  .main-section__btn img {
+    margin-left: 1rem; }
   .main-section__btn:hover {
     color: #00CCCC;
     background-color: #0F2336; }
@@ -457,8 +459,7 @@ button {
     font-weight: 900;
     font-size: 4rem;
     line-height: 1.38;
-    color: #0F2336;
-    max-width: 20rem; }
+    color: #0F2336; }
   .text__descriptions {
     margin-top: 2.1rem;
     font-size: 1.6rem;
@@ -489,6 +490,8 @@ button {
     font-size: 3.8rem; } }
 
 @media screen and (max-width: 768px) {
+  .tel-section__row {
+    margin-bottom: 16rem; }
   .tel-section__img-crisps {
     bottom: -19rem;
     left: 12rem; }
@@ -503,6 +506,8 @@ button {
     left: -6rem; } }
 
 @media screen and (max-width: 578px) {
+  .tel-section__row {
+    margin-bottom: 10rem; }
   .tel-section__img-crisps {
     bottom: -26rem;
     left: 7rem; }
@@ -536,7 +541,6 @@ button {
     width: 50%; }
   .loyalty-points-section__img img {
     max-width: 41.1vw;
-    position: absolute;
     margin: -10rem 0 0 -4.5rem; }
 
 .text-block {
@@ -572,3 +576,75 @@ button {
     margin: 3rem 0 0 6rem; }
   .text-block__third-block {
     margin: 3rem 0 -3rem 2rem; }
+
+@media screen and (max-width: 1024px) {
+  .loyalty-points-section__img img {
+    margin: 4rem 0 0 3.5rem; } }
+
+@media screen and (max-width: 768px) {
+  .loyalty-points-section {
+    margin-bottom: 14rem; }
+  .text-block__title {
+    font-size: 2.3rem; }
+  .text-block__block {
+    padding: 1.5rem 2.1rem 3.3rem 1.5rem; }
+  .text-block__first-block {
+    margin: -4rem 0 0 2rem; }
+  .text-block__second-block {
+    margin: 3rem 0 0 2rem; }
+  .text-block__third-block {
+    margin: 3rem 0 -3rem 2rem; } }
+
+@media screen and (max-width: 578px) {
+  .loyalty-points-section {
+    margin-bottom: 10rem; }
+  .text-block {
+    width: 100%; }
+    .text-block__description {
+      margin-left: -7.5rem; }
+  .loyalty-points-section__img {
+    width: 100%;
+    text-align: center; }
+  .loyalty-points-section__img img {
+    margin: 4rem 0 0 0; }
+  .loyalty-points-section__content {
+    display: block; } }
+
+.friends-section__row {
+  background-color: #F5F6F7;
+  margin-bottom: 15rem;
+  border-radius: 5rem; }
+
+.friends-section__content {
+  padding: 1rem 0 0 14rem;
+  display: flex; }
+
+.friends-section__text {
+  width: 50%; }
+
+.friends-section__imgs {
+  width: 50%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1); }
+
+.friends-section__img-drink {
+  position: absolute;
+  bottom: 2rem;
+  left: 23rem;
+  z-index: 0;
+  width: 15.5vw; }
+
+.friends-section__img-berries {
+  position: absolute;
+  bottom: -5.5rem;
+  left: -10.5rem;
+  z-index: 0;
+  max-width: 13vw; }
+
+@media screen and (max-width: 1024px) {
+  .friends-section__content {
+    padding: 1rem 0 0 7rem; } }
+
+@media screen and (max-width: 768px) {
+  .friends-section__content {
+    padding: 1rem 0 0 3rem; } }

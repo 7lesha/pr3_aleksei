@@ -72,7 +72,6 @@
         font-size: 4rem;
         line-height: 1.38;
         color: $c-text;
-        max-width: 20rem;
     }
 
     &__descriptions {
@@ -122,6 +121,11 @@
 
 @media screen and (max-width: $sm) {
     .tel-section {
+
+        &__row {
+            margin-bottom: 16rem;
+        }
+
         &__img-crisps {
             bottom: -19rem;;
             left: 12rem;
@@ -146,6 +150,11 @@
 
 @media screen and (max-width: $xs) {
     .tel-section {
+
+        &__row {
+            margin-bottom: 10rem;
+        }
+
         &__img-crisps {
             bottom: -26rem;;
             left: 7rem;
