@@ -1,0 +1,112 @@
+@import "../main/parameters";
+
+.links-section {
+
+    &__row {
+        margin-bottom: 10rem;
+        text-align: center;
+    }
+}
+
+.content {
+
+    &__img {
+        margin-bottom: 2.3rem;
+    }
+
+    &__title {
+        max-width: 51.9rem;
+        margin: 0 auto;
+        font-weight: 900;
+        font-size: 5rem;
+        line-height: 1.2;
+        color: $c-text;
+        margin-bottom: 2rem;
+    }
+
+    &__send-link {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+        flex-wrap: wrap;
+    }
+
+    &__input {
+        background: #F0F0F2;
+        border: 0.1rem solid #F0F0F2;
+        box-sizing: border-box;
+        border-radius: 6px;
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        text-align: center;
+        color: rgba(0, 0, 0, 0.35);
+        padding: 1.4rem;
+        width: 39.4rem;
+        margin-bottom: 1rem;
+    }
+
+    &__a {
+        font-weight: bold;
+        font-size: 1.8rem;
+        line-height: 1.2;
+        text-align: center;
+        color: $c-text;
+        display: inline-block;
+        background: $c-primary;
+        border: 0.1rem solid $c-primary;
+        box-sizing: border-box;
+        border-radius: 1.4rem;
+        padding: 1.6rem 3.5rem;
+        margin-left: 2rem;
+    }
+
+    &__a:hover {
+        color: $c-primary;
+        background-color: $c-text;
+    }
+
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        margin-left: -15rem;
+        flex-wrap: wrap;
+    }
+
+    &__button {
+        display: inline-block;
+        background: #240C39;
+        text-align: center;
+        padding: 1.6rem 3.3rem 1.5rem 3.1rem;
+        border-radius: 1rem;
+        border: 0.1rem solid #240C39;
+        box-sizing: border-box;
+        margin-right: 2.4rem;
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width: $sm) {
+
+    .content {
+    
+        &__title {
+            font-size: 4.6rem;
+        }
+
+        &__buttons {
+            margin-left: 0rem;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+
+    .content__a {
+        margin-left: 0rem;
+    }
+
+    .content__button {
+        margin-right: 0rem;
+    }
+}

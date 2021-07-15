@@ -4,7 +4,7 @@
 
     &__row {
         background-color: $c-light-bg;
-        margin-bottom: 15rem;
+        margin-bottom: 14rem;
         border-radius: 5rem;
     }
 
@@ -28,12 +28,12 @@
         bottom: 2rem;
         left: 23rem;
         z-index: 0;
-        width: 15.5vw;
+        max-width: 15.5vw;
     }
 
     &__img-berries {
         position: absolute;
-        bottom: -5.5rem;
+        bottom: -4.5rem;
         left: -10.5rem;
         z-index: 0;
         max-width: 13vw;
@@ -45,11 +45,61 @@
     .friends-section__content {
         padding: 1rem 0 0 7rem;
     }
+
+    .friends-section {
+
+        &__img-berries {
+            bottom: 6rem;;
+            left: -6rem;
+        }
+
+        &__img-drink {
+            bottom: 11rem;
+            left: 19rem;
+        }
+    }
 }
 
 @media screen and (max-width: $sm) {
 
-    .friends-section__content {
-        padding: 1rem 0 0 3rem;
+    .friends-section {
+    
+        &__content {
+            padding: 1rem 0 0 3rem;
+        }
+
+        &__row {
+            margin-bottom: 12rem;
+        }
+
+        &__img-berries {
+            bottom: 10rem;;
+            left: -6rem;
+        }
+
+        &__img-drink {
+            bottom: 14rem;
+            left: 13rem;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+
+    .friends-section {
+
+        &__row {
+            margin-bottom: 10rem;
+        }
+
+        &__img-berries {
+            bottom: 20rem;;
+            left: -6rem;
+        }
+
+        &__img-drink {
+            bottom: 23rem;
+            left: 8rem;
+        }
     }
 }

@@ -1,2 +1,101 @@
 // для каждого компонента нужно импортить переменные, чтобы их использовать
 @import "../main/parameters";
+
+.footer {
+    background-color: $c-text;
+    position: relative;
+
+    &__img-left {
+        position: absolute;
+        left: 0;
+        bottom: 2.7rem;
+        max-width: 20.6vw;
+    }
+
+    &__img-right {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        max-width: 20vw;
+    }
+
+    &__row {
+        padding-top: 5.5rem;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__logo {
+        padding-left: 10.5rem;
+        width: 50%;
+    }
+
+    &__text {
+        display: flex;
+        width: 50%;
+        padding: 3rem 11rem 10.5rem 2rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+.text__a {
+    padding-right: 1rem;
+    margin-bottom: 2rem;
+//     &__company {
+//         padding-right: 1rem;
+//     }
+
+//     &__support {
+//         padding-right: 1rem;
+//     }
+}
+
+.title {
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 1.67;
+    letter-spacing: 0.1px;
+    color: $c-primary;
+    margin-bottom: 2rem;
+}
+
+.a {
+    font-size: 1.4rem;
+    line-height: 1.43;
+    letter-spacing: 0.39px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.li {
+    margin-bottom: 0.5rem; 
+}
+
+@media screen and (max-width: $md) {
+
+    .footer__logo {
+        padding-left: 0rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: $sm) {
+    .footer {
+        &__logo {
+            width: 40%;
+            text-align: right;
+        }
+
+        &__text {
+            width: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+    .footer__text {
+        padding: 3rem 7rem 10.5rem 2rem;
+    }
+}

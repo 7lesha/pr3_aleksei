@@ -42,7 +42,7 @@
         bottom: -6rem;
         left: 23rem;
         z-index: 3;
-        width: 15.5vw;
+        max-width: 15.5vw;
     }
 
     &__img-drink {
@@ -79,12 +79,7 @@
         font-size: 1.6rem;
         line-height: 1.5;
         color: $c-text2;
-        max-width: 41.4rem;
-    }
-}
-@media screen and (max-width: $lg) {
-    .main-section__img {
-        right: 0vw;
+        max-width: 41rem;
     }
 }
 
