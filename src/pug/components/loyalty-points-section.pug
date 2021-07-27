@@ -1,19 +1,19 @@
 section.loyalty-points-section
-    .container.loyalty-points-section__row
-        .loyalty-points-section__content
-            .text-block
+    div.container.loyalty-points-section__row
+        div.loyalty-points-section__content
+            div.text-block
                 mixin itemss(img,title,description)
-                    .text-block__block 
-                        .text-block__img
+                    div.text-block__block 
+                        div.text-block__img
                             img(src=img, alt="картинка")
-                        .text-block__text
+                        div.text-block__text
                             p.text-block__title=title 
                             p.text-block__description=description
-                .text-block__first-block
+                div.text-block__first-block
                     +itemss('./assets/imgs/img11.svg','Loyalty Points','Collect points on each store and redeem them to change for Teas.')
-                .text-block__second-block
+                div.text-block__second-block
                     +itemss('./assets/imgs/img12.svg','Exclusive Store Discounts','You can enjoy lots of discounts from the selected stores near you.')
-                .text-block__third-block
+                div.text-block__third-block
                     +itemss('./assets/imgs/img13.svg','T.Pass Free Drinks','2 Teas for $5.99 each month. and you can carry them over to the next month.')
-            .loyalty-points-section__img
+            div.loyalty-points-section__img
                 img(src="./assets/imgs/img10.png", alt="картинка")

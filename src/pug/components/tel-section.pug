@@ -1,16 +1,16 @@
 section.tel-section 
-    .container.tel-section__row 
-        .tel-section__content
+    div.container.tel-section__row 
+        div.tel-section__content
             span.tel-section__imgs
                 img.tel-section__img-tel(src="./assets/imgs/img7.png", alt="картинка")
                 img.tel-section__img-screen(src="./assets/imgs/img8.png", alt="картинка")
                 img.tel-section__img-crisps(src="./assets/imgs/img6.png", alt="картинка")
                 img.tel-section__img-drink(src="./assets/imgs/img9.png", alt="картинка")
-        .tel-section__text
+        div.tel-section__text
             mixin items(description, title, titles, descriptions)
-                .text
-                    .text__description=description
-                    .text__title=title
-                    .text__title=titles
-                    .text__descriptions=descriptions
+                div.text
+                    div.text__description=description
+                    div.text__title=title
+                    div.text__title=titles
+                    div.text__descriptions=descriptions
             +items('Your daily pick-me-up','How does', 'it work.','Start choosing your favorite teas and snacks in your nearby stores and place your orders, accumulate points, share gifts and teas with your friends and co-workers, and finally use our T-Pass to get your free drinks.')
