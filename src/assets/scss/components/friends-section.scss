@@ -6,21 +6,40 @@
         background-color: $c-light-bg;
         margin-bottom: 14rem;
         border-radius: 5rem;
+        display: flex;
+        flex-wrap: wrap;
     }
 
     &__content {
-        padding: 1rem 0 0 14rem;
-        display: flex;
+        position: relative;
+        width: 50%;
+        text-align: center;
+        // display: flex;
+        // flex-wrap: wrap;
     }
 
     &__text {
+        padding: 1rem 0 0 14rem;
         width: 50%;
     }
 
     &__imgs {
-        width: 50%;
-        -webkit-transform: scaleX(-1);
-        transform: scaleX(-1);
+        //width: 50%;
+        position: relative;
+        display: inline-block;
+    }
+
+    &__img-tel {
+        position: relative;
+        z-index: 2;
+        margin: -5rem 0;
+    }
+
+    &__img-screen {
+        position: absolute;
+        top: -3rem;
+        left: 2rem;
+        z-index: 1;
     }
 
     &__img-drink {
@@ -28,7 +47,6 @@
         bottom: 2rem;
         left: 23rem;
         z-index: 0;
-        max-width: 15.5vw;
     }
 
     &__img-berries {
@@ -36,26 +54,40 @@
         bottom: -4.5rem;
         left: -10.5rem;
         z-index: 0;
-        max-width: 13vw;
     }
 }
 
 @media screen and (max-width: $md) {
 
-    .friends-section__content {
-        padding: 1rem 0 0 7rem;
+    .friends-section__text {
+        padding: 1rem 0 0 0rem;
     }
 
     .friends-section {
 
+        &__content {
+            margin-top: 2rem;
+        }
+
         &__img-berries {
-            bottom: 6rem;;
-            left: -6rem;
+            left: -11rem;
         }
 
         &__img-drink {
-            bottom: 11rem;
-            left: 19rem;
+            left: 27rem;
+        }
+
+        &__img-screen {
+            left: 2rem;
+        }
+
+        &__text {
+            width: 100%;
+            text-align: center;
+        }
+
+        &__content {
+            width: 100%;
         }
     }
 }
@@ -63,23 +95,29 @@
 @media screen and (max-width: $sm) {
 
     .friends-section {
-    
-        &__content {
-            padding: 1rem 0 0 3rem;
-        }
 
         &__row {
             margin-bottom: 12rem;
         }
 
+        &__img-tel {
+            margin-top: -4rem;
+            max-width: 215px;
+        }
+
+        &__img-screen {
+            max-width: 186px;
+            left: 1.5rem;
+        }
+
         &__img-berries {
-            bottom: 10rem;;
-            left: -6rem;
+            max-width: 140px;
+            left: -10rem;
         }
 
         &__img-drink {
-            bottom: 14rem;
-            left: 13rem;
+            max-width: 125px;
+            left: 17rem;
         }
     }
 }
@@ -92,14 +130,24 @@
             margin-bottom: 10rem;
         }
 
+        &__img-tel {
+            margin-top: -4rem;
+            max-width: 160px;
+        }
+
+        &__img-screen {
+            max-width: 139px;
+            left: 1rem;
+        }
+
         &__img-berries {
-            bottom: 20rem;;
-            left: -6rem;
+            max-width: 81px;
+            left: -5rem;
         }
 
         &__img-drink {
-            bottom: 23rem;
-            left: 8rem;
+            max-width: 89px;
+            left: 13rem;
         }
     }
 }

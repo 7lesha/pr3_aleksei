@@ -8,6 +8,7 @@
         margin-bottom: 22rem;
         border-radius: 5rem;
         display: flex;
+        flex-wrap: wrap;
     }
 
     &__content {
@@ -23,7 +24,6 @@
     }
 
     &__img-tel {
-        max-width: 22.3vw;
         position: relative;
         z-index: 2;
         margin: -5rem 0;
@@ -33,7 +33,6 @@
         position: absolute;
         top: -3rem;
         left: 2rem;
-        max-width: 19.3vw;
         z-index: 1;
     }
 
@@ -42,7 +41,6 @@
         bottom: -6rem;
         left: 23rem;
         z-index: 3;
-        max-width: 15.5vw;
     }
 
     &__img-drink {
@@ -50,7 +48,6 @@
         bottom: 6.5rem;
         left: -12.5rem;
         z-index: 0;
-        max-width: 13vw;
     }
 
     &__text {
@@ -85,60 +82,63 @@
 
 @media screen and (max-width: $md) {
     .tel-section {
-        &__img-crisps {
-            bottom: -15rem;;
-            left: 18rem;
+
+        &__content {
+            width: 100%;
         }
 
-        &__img-tel {
-            bottom: -7rem;
-            left: 2rem;
-        }
-
-        &__img-screen {
-            top: 4rem;
-            left: 3.5rem;
-        }
-
-        &__img-drink {
-            bottom: 0rem;
-            left: -6rem;
+        &__text {
+            text-align: center;
+            width: 100%;
         }
 
         &__row {
             margin-top: 6rem;
         }
+
+        &__imgs {
+            margin-left: 0rem;
+        }
     }
     .text__title {
         font-size: 3.8rem;
+    }
+
+    .text__descriptions {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text {
+        padding: 11.5rem 0 6rem 0rem;
     }
 }
 
 @media screen and (max-width: $sm) {
     .tel-section {
 
+        &__img-tel {
+            max-width: 215px;
+            margin: -5rem 0;
+        }
+    
+        &__img-screen {
+            left: 1rem;
+            max-width: 186px;
+        }
+    
+        &__img-crisps {
+            left: 15rem;
+            max-width: 140px;
+        }
+    
+        &__img-drink {
+            left: -8.5rem;
+            max-width: 125px;
+        }    
+
         &__row {
             margin-bottom: 16rem;
-        }
-
-        &__img-crisps {
-            bottom: -19rem;;
-            left: 12rem;
-        }
-
-        &__img-tel {
-            bottom: -14rem;
-            left: 0rem;
-        }
-
-        &__img-screen {
-            top: 10.5rem;
-            left: 1rem;
-        }
-
-        &__img-drink {
-            bottom: -11rem;
-            left: -6rem;
         }
     }
 }
@@ -150,28 +150,28 @@
             margin-bottom: 10rem;
         }
 
-        &__img-crisps {
-            bottom: -26rem;;
-            left: 7rem;
+        &__row {
+            margin-top: -0.2rem;
         }
 
         &__img-tel {
-            bottom: -20rem;
-            left: -2rem;
+            margin-top: -4rem;
+            max-width: 160px;
         }
 
         &__img-screen {
-            top: 16rem;
-            left: -1.2rem;
+            max-width: 139px;
+            left: 1rem;
+        }
+
+        &__img-crisps {
+            max-width: 81px;
+            left: 12rem;
         }
 
         &__img-drink {
-            bottom: -19rem;
-            left: -7rem;
-        }
-
-        &__row {
-            margin-top: -0.2rem;
+            max-width: 89px;
+            left: -5rem;
         }
     }
 
